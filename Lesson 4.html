@@ -1,0 +1,133 @@
+<DOCTYPE! HTML>
+<html>
+<head>
+<title>Preston Weather Page</title>
+</head>
+<body>
+
+
+<style>
+
+body{
+  background-color: #FCFFEB;
+}
+
+header{
+  background-color: #FAFAC6;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+footer{
+  justify-content: center;
+  background-color: #FAFAC6;
+  width: 800px;
+  padding: 5px;
+  display: flex;
+  margin: auto;
+}
+
+.fontname{
+  font-family: 'EB Garamond', serif;
+}
+
+ul {
+  margin: auto;
+}
+
+nav {
+	margin: 0 auto;
+	background-color: #474350;
+}
+.navigation {
+	list-style: none;
+	padding: 0;
+}
+
+.navigation li:first-child {
+	display: block;
+}
+
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	color: #fff;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+  
+}
+.navigation a:hover {
+	background-color: #FECDAA;
+  color: #474350;
+  transition-duration: 0.5s;
+}
+
+.responsive li {
+	display: block;
+}
+
+div.dotted {
+  border-style: dotted;
+  width: 600px;
+  margin: auto;
+  padding: 15px;
+  color: #474350;
+  
+}
+
+</style>
+
+
+<script>
+const hambutton = document.querySelector(".ham");
+hambutton.addEventListener("click", toggleMenu, false);
+
+function toggleMenu() {
+  document.querySelector(".navigation").classList.toggle("responsive");
+}</script>
+
+<link rel="stylesheet" href="large.html">
+    <link rel="stylesheet" href="medium.html">
+    <link rel="stylesheet" href="small.html">
+
+    <header>
+        <picture>
+        <img src="https://i.lensdump.com/i/iaRJlM.png" alt="Sun">
+        </picture>
+        <link href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap" rel="stylesheet">
+        <section class="header">
+          <h1 class=fontname>Hurricane Weather</h1>
+          <div class="m">Speedy and accurate predictions!</div>
+        </section>
+      </header>
+      
+      <nav>
+          <ul class="navigation">
+              <li><a class="ham" href="#">&#9776; Menu</a></li>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Preston</a></li>
+              <li><a href="#">Soda Springs</a></li>
+              <li><a href="#">Fish Haven</a></li>
+              <li><a href="#">Storm Center</a></li>
+              <li><a href="#">Gallery</a></li>
+          </ul>
+      </nav>
+      
+      <main>
+        <h2 style=text-align:center;>Preston</h2>
+        <div class="dotted" style=text-align:center;>Weather Summery</div><br>
+        <div class="dotted" style=text-align:center;>5-Day ForeCast</div><br>
+        <div class="dotted" style=text-align:center;>Article</div><br>
+        <div class="dotted" style=text-align:center;>Contact Information</div>
+      </main>
+      
+      <footer>
+        <p>©Hurricane Weather | Kristi Poulsen | Terms of Use | Last Updated: Saturday, 1 February, 2020</p>
+      </footer>
+
+</body>
+</html>
