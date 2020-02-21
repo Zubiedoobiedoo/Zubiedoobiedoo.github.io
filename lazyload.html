@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+const images = document.querySelectorAll("[src]");
+
+function preloadImage(img){
+  const src = img.getAttribute("data-src");
+}
+
+const imgOptions ={}
+
+const imgObserver = new IntersectionObserver((enteries,imgObserver) =>){
+      enteries.forEach(entery => {
+        if (!entry.isIntersection){
+        return;
+}
+         else{
+           preloadImage(entry.target);
+           imageObserver.unobserve(entry.target);
+         }
+})
+}, img options);
+
+images.forEach(image =>{
+  imageObserver.observe(image);
+})
+</script>
+
+
+    <h1>Progressive Loading</h1>
+
+<div class="crystals-fancy-grid">
+  <img src="https://i.lensdump.com/i/jifXGH.jpg" alt="doesn't matter">
+</div>
+
+<div class="crystals-fancy-grid">
+  <img src="https://i.lensdump.com/i/jifwk1.jpg" alt="doesn't matter">
+</div>
+
+<div class="crystals-fancy-grid">
+  <img src="https://i.lensdump.com/i/jifcvx.jpg" alt="doesn't matter">
+</div>
+
+<div class="crystals-fancy-grid">
+  <img src="https://i.lensdump.com/i/jifFWe.jpg" alt="doesn't matter">
+</div>
+
+<div class="crystals-fancy-grid">
+  <img src="https://i.lensdump.com/i/jifU9k.jpg" alt="doesn't matter">
+</div>
+
+</body>
+</html>
